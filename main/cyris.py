@@ -46,7 +46,7 @@ logging.basicConfig(format='* %(levelname)s: %(filename)s: %(message)s')
 # Constants.
 #############################################################################
 
-DEBUG = True
+DEBUG = False
 DEBUG2 = False
 
 # Whether to try to destroy a cyber range when an error occurs
@@ -1304,9 +1304,9 @@ class CyberRangeCreation():
                     time.sleep(2)
                 if DEBUG: print "* DEBUG: cyris:   Base VM '{0}' was undefined => CONTINUE".format(guest.getBasevmName())
 
-            #os.system("sudo chown cyuser:cyuser /home/cyuser/cyris/cyber_range/123/*")
 
-            os.system("ls -l /home/cyuser/cyris/cyber_range/123/")
+            
+
 
             ######## parallel distribute base images to hosts ###########
             print "* INFO: cyris: Distribute the base images for cloning."

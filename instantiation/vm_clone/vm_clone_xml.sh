@@ -102,18 +102,6 @@ echo "</domain>" >> ${ABSPATH}images/${VM_ID}_config.xml;
 echo "** Define the cloned VM using config file '${VM_ID}_config.xml'"
 sudo virsh define ${ABSPATH}images/${VM_ID}_config.xml
 
-echo virsh list --all
-virsh list --all
-
-echo sudo virsh list --all
-sudo virsh list --all
-
-echo virsh list --all
-virsh list --all
-
-echo sudo virsh list --all
-sudo virsh list --all
-
 
 echo "** Start the cloned VM '${VM_ID}'"
 #sleep 60
